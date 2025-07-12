@@ -222,7 +222,7 @@ If you want to replace these placeholders with actual images, here are the comma
 <img src="images/model-hero.jpg" alt="Fashion Model" class="hero-image">
 
 <!-- For products: -->
-<img src="images/product-1.jpg" alt="Classic White Tee" class="product-image">
+<img src="whisk_354bf97f17.jpg/product-1.jpg" alt="Classic White Tee" class="product-image">
 ```
 
 ### **Option 2: CSS Background Images**
