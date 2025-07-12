@@ -98,9 +98,7 @@ function showQuickViewModal(productName, productPrice) {
                 </div>
                 <div class="modal-body">
                     <div class="product-preview">
-                        <div class="image-placeholder">
-                            <i class="fas fa-tshirt"></i>
-                        </div>
+                        <img src="${productCard.querySelector('.product-img').src}" alt="${productName}" class="modal-product-img">
                     </div>
                     <div class="product-details">
                         <p class="price">${productPrice}</p>
@@ -187,19 +185,11 @@ function showQuickViewModal(productName, productPrice) {
             gap: 2rem;
         }
         
-        .product-preview .image-placeholder {
+        .product-preview .modal-product-img {
             width: 100%;
             height: 200px;
-            background: #f8f9fa;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            object-fit: cover;
             border-radius: 8px;
-        }
-        
-        .product-preview .image-placeholder i {
-            font-size: 3rem;
-            color: #adb5bd;
         }
         
         .product-details .price {
