@@ -180,3 +180,68 @@ For questions or support, please contact:
 ---
 
 **ELEVATE** - Elevating style, one piece at a time. 
+
+## 📸 **Current Image Implementation:**
+
+### **What's Used Instead of Real Images:**
+1. **Font Awesome Icons** - Clothing icons (`fas fa-tshirt`, `fas fa-user-tie`, etc.)
+2. **Placeholder Divs** - Colored background boxes with dashed borders
+3. **CSS Backgrounds** - Gradient backgrounds and solid colors
+
+### **Where "Images" Appear:**
+
+1. **Hero Section Model:**
+```html
+<div class="model-placeholder">
+    <i class="fas fa-user-tie"></i>
+    <p>Fashion Model</p>
+</div>
+```
+
+2. **Product Images:**
+```html
+<div class="image-placeholder">
+    <i class="fas fa-tshirt"></i>
+</div>
+```
+
+3. **Sale Section:**
+```html
+<div class="image-placeholder">
+    <i class="fas fa-percentage"></i>
+</div>
+```
+
+## 🖼️ **To Add Real Images:**
+
+If you want to replace these placeholders with actual images, here are the commands and code changes:
+
+### **Option 1: Replace with Real Images**
+```html
+<!-- Instead of placeholder div, use: -->
+<img src="images/model-hero.jpg" alt="Fashion Model" class="hero-image">
+
+<!-- For products: -->
+<img src="images/product-1.jpg" alt="Classic White Tee" class="product-image">
+```
+
+### **Option 2: CSS Background Images**
+```css
+.model-placeholder {
+    background-image: url('images/model-hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+```
+
+### **Recommended Image Types:**
+- **Hero Section**: High-quality fashion model photos (1920x1080px or larger)
+- **Product Images**: Square product photos (800x800px recommended)
+- **Sale Banners**: Promotional graphics (1200x400px)
+
+### **Image Formats:**
+- **JPG/JPEG** - For photographs
+- **PNG** - For graphics with transparency
+- **WebP** - For better compression (modern browsers)
+
+The current implementation uses **Font Awesome icons** as placeholders, which is perfect for development and prototyping. To add real images, you would replace the placeholder divs with `<img>` tags or CSS background images. 
